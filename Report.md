@@ -50,7 +50,7 @@ Vista con suddivisioni | Vista renderizzata
 ![4_dettagli_tetto_1](ImgRepo/4/4_dettagli_tetto_1.png) | ![4_dettagli_tetto_2](ImgRepo/4/4_dettagli_tetto_2.png)
 
 ### 4.2 Secondo tetto
-Il secondo é stato piú complicato, dato il maggior numero di dettagli da aggiungere sulla parte frontale per comporre il terzo piano, ma con estrusioni, Bevel e qualche collegamento in piú sui vertici é stato contenuto un buon risultato.
+Il secondo é stato piú complicato, dato il maggior numero di dettagli da aggiungere sulla parte frontale per comporre il terzo piano, ma con estrusioni, Bevel e qualche collegamento in piú sui vertici é stato ottenuto un buon risultato.
 Vista con suddivisioni | Vista renderizzata
 :-------------------------:|:-------------------------:
 ![4_dettagli_tetto_3](ImgRepo/4/4_dettagli_tetto_3.png) | ![4_dettagli_tetto_4](ImgRepo/4/4_dettagli_tetto_4.png)
@@ -69,3 +69,24 @@ Vista con suddivisioni | Vista renderizzata
 Vista con suddivisioni | Vista renderizzata
 :-------------------------:|:-------------------------:
 ![4_dettagli_tetto_7](ImgRepo/4/4_dettagli_tetto_7.png) | ![4_dettagli_tetto_8](ImgRepo/4/4_dettagli_tetto_8.png)
+
+## 5. Porte e finestre
+Porte e finestre sono state realizzate aggiungendo delle nuove mesh, sempre partendo dal cubo. Anche in questo caso il lavoro é stato suddiviso in sottofasi.
+### 5.1 Porte e finestre del piano terra
+Sono stati ritagliati gli spazi dove inserire le nuove mesh, selezionando le faccie opportune ed eliminandole. ![5_porte_finestre_0](ImgRepo/5/5_porte_finestre_0.png)
+
+In secondo luogo, una alla volta, sono state aggiunte e modelllate le nuove mesh: per far sí che queste venissero posizionate direttamente negli spazi a loro designate, in object mode ho selezionato il piano terra e passando in edit mode l'angolo specifico da cui partire; a questo punto ho spostato il cursore sulla selezione, utilizzando il menu che si presenta al comando *shift s*. Con la posizione corretta impostata sono uscita dall'edit mode e ho deselezionato la mesh, in modo che una volta inserito il nuovo cubo questo non venga collegato al piano terra e possa essere modellato separatamente. Fatto questo é cominciata la modellazione, sfruttando *LoopCut*, estrusioni e il *Grab*.
+#### 5.1.1 Piano terra - prima sezione
+Sia per la porta che per la finestra, una volta che con il *Grab* la mesh é stata modellata cosí che coprisse lo spazio ritagliato, la superficie é stata suddivisa tramite *LoopCut*. I bordi che definiscono la specchiatura degli infissisono stati estrusi, cosí come le altre superfici che lo necessitavano, come i confini della porta e il davanzale della finestra. Gli esterni della specchiatura sono stati infine modificati tramite il comando *bevel*, in modo da renderli piú realistici.
+Vista con suddivisioni | Vista renderizzata
+:-------------------------:|:-------------------------:
+![5_porte_finestre_1](ImgRepo/5/5_porte_finestre_1.png) | ![5_porte_finestre_2](ImgRepo/5/5_porte_finestre_2.png)
+
+#### 5.1.2 Piano terra - seconda sezione
+Anche per questa porta e finestra sono state aggiunte due nuove mesh, posizionate correttamente sfruttando la posizione del cursore, e gli spazi di queste sono stati definiti tramite *LoopCut*. Come prima sono stati estrusi davanzale, bordi delle specchiature degli infissi e qualche dettaglio per la porta. In questo caso é stata aggiunta anche la divisione a metá per le ante della finestra e per la porta: sono stati eseguiti tre *LoopCut*, uno a metá e due molto vicini ai lati, dopo di che in edge mode é stato selezionato il taglio centrale e spostato tramite *Grab* di poco all'interno.
+
+La parte superiore della porta doveva inoltre avere una forma ad arco. Questa é stata ottenuta tramite *Bevel*, dopo non pochi tentativi e fallimenti. Prima di tutto la parte superiore della mesh é stata divisa dalla stessa, in modo da poter agire su questa separatamente. Sono stati quindi cancellati gli edge non necessari, selezionandoli e usando il comando *ctrl x*. Selezioando poi i due edge esterni é stato applicato il *Bevel* e scorrendo con la rotella del mouse é stato aumentato il numero di segmenti.
+
+Vista con suddivisioni | Vista renderizzata
+:-------------------------:|:-------------------------:
+![5_porte_finestre_3](ImgRepo/5/5_porte_finestre_3.png) | ![5_porte_finestre_4](ImgRepo/5/5_porte_finestre_4.png)
