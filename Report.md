@@ -99,7 +99,38 @@ Vista con suddivisioni | Vista renderizzata
 ![5_porte_finestre_5](ImgRepo/5/5_porte_finestre_5.png) | ![5_porte_finestre_6](ImgRepo/5/5_porte_finestre_6.png)
 
 ### 5.2 Finestre del primo piano
-Tutte e 6 le finestre del primo piano sono state costruite come quella della sezione [5.1.2]: definizione degli spazi tramite *LoopCut*, estrusione dei margini, *Bevel* delle specchiature degli infissi.
+Tutte e 6 le finestre del primo piano sono state costruite come quella della sezione [5.1.2]: definizione degli spazi tramite *LoopCut*, estrusione dei margini, *Bevel* delle specchiature degli infissi. Unico comando differente è stato utilizzato per la parte laterale: lo spazio riservato agli infissi in questo caso era uguale, il che mi ha permesso di costruire un'unica finestra, duplicarla, utilizzando il comando *shift d*, e spostarla nella posizione ad essa designata sempre con il *Grab*.
 Parte frontale | Parte laterale
 :-------------------------:|:-------------------------:
 ![5_porte_finestre_7](ImgRepo/5/5_porte_finestre_7.png) | ![5_porte_finestre_8](ImgRepo/5/5_porte_finestre_8.png)
+
+## 6. Esterni e dettagli
+Terminata la parte strutturale dell'edificio mi sono concentrata su qualche dettaglio di questo e sulle decorazioni esterne.
+### 6.1 Decorazioni separatori
+Un dettaglio che ho voluto mantenere dalle immagini di riferimento è stato quello delle assi orizzontali che spuntano dai cornicioni in legno che separano i piani. Per modellarle ho semplicemente aggiunto un nuovo cubo, rimpicciolendolo per avere la misura desiderata e posizionandolo all'inizio del cornicione. A questo punto ho applicato il modifier *Array*, modificandone i parametri fino ad ottenere una serie di oggetti, identici all'originale, che arrivasse in fondo all'asse.
+. | .
+:-------------------------:|:-------------------------:
+![6_esterni1](ImgRepo/6/6_esterni1.png) | ![6_esterni2](ImgRepo/6/6_esterni2.png)
+### 6.2 Lampione
+Per prima cosa è stata modellata l'asse orizzontale che avrebbe dovuto sorreggere il lampione, inserendo sempre un nuovo cubo e ruotandolo con *r*. 
+
+La costruzione dell'armatura è stata più articolata, anche se non troppo complessa: ho aggiunto un cilindro, diminuendone le faccie a 6. Ho poi estruso quelli che sarebbero diventati i due bordi inferiore e superiore. Quest'ultimo è stato selezionato, in edge mode *alt e click del mouse*, e scalato in modo che fosse poco più grande di quello sottostante. I lati della specchiatura sono stati selezionati e modificati tramite *Bevel*, così che fossero più spessi di una semplice riga, per creare una divisione più marcata. 
+
+La parte a punta sopra l'armatura è stata realizzata trovando il centro dell'esagono superiore, unendo i punti opposti tramite join, ed estrudendo in alto quest'ultimo. Le faccie orizzontali sono quindi state cancellate e ne sono state create di nuove selezionando i punti e utilizzando il comanco *Face*. Un'operazione simile è stata effettuata per la parte inferiore, ma questa è stata anche scalata per ridurne le dimensioni.
+
+Molto più complicata è risultata la curva che unisce il braccio orizzontale al lampione. Inizialmente avevo provato a realizzarlo con un altro cilindro, ottenendo un risultato meno che ideale. Con qualche ricerca in più la soluzione più semplice è risultata quella di utilizzare una *BezierCurve*. Spendendo un po' di tempo a modellare la curva, aggiungendo dei nuov segmeni tramite estrusione, ho ottenuto una forma soddisfaciente, che più si avvicina a quella che avevo in mente. Infine, per creare lo spessore, ho inserito un *Bevel Circle*, ridimesionandolo della misura voluta, e sempre sulla curva, sotto *Geometry*, nella parte *Bevel* è stato selezionato quest'ultimo.
+Vista con suddivisioni | Vista renderizzata
+:-------------------------:|:-------------------------:
+![6_esterni3](ImgRepo/6/6_esterni3.png) | ![6_esterni4](ImgRepo/6/6_esterni4.png)
+### 6.3 Tavoli e sedie
+Di entrambi ne è stato creato uno solo, duplicato e riposizionato allo stesso modo delle finestre al punto [5.2]. Inserendo un nuovo cubo, questo è stato ridimensionato, ne sono stati definiti gli spazi con *LoopCut* e tramite tagli ed estrusioni ne è stata modellata la struttura. Le rientranze e i bordi decorativi sono stati creati tramite scalature e selezione di loop in edge mode e spostamenti.
+
+Vista con suddivisioni | Vista renderizzata
+:-------------------------:|:-------------------------:
+![6_esterni6](ImgRepo/6/6_esterni6.png) | ![6_esterni7](ImgRepo/6/6_esterni7.png)
+![6_esterni8](ImgRepo/6/6_esterni8.png) | ![6_esterni9](ImgRepo/6/6_esterni9.png)
+
+Dopo aver duplicato il tavolo e la serie originali, le copie sono state spostate e ruotate di qualche grado, in modo da creare una composizione che possa somigliare a come si presenterebbe l'esterno di un bar.
+![6_esterni10](ImgRepo/6/6_esterni10.png)
+
+### 6.4 Cartello esterno
