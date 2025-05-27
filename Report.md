@@ -130,7 +130,10 @@ Vista con suddivisioni | Vista renderizzata
 ![6_esterni6](ImgRepo/6/6_esterni6.png) | ![6_esterni7](ImgRepo/6/6_esterni7.png)
 ![6_esterni8](ImgRepo/6/6_esterni8.png) | ![6_esterni9](ImgRepo/6/6_esterni9.png)
 
-Dopo aver duplicato il tavolo e la serie originali, le copie sono state spostate e ruotate di qualche grado, in modo da creare una composizione che possa somigliare a come si presenterebbe l'esterno di un bar.
+Dopo aver duplicato il tavolo e la sedia originale, le copie sono state spostate e ruotate di qualche grado, in modo da creare una composizione che possa somigliare a come si presenterebbe l'esterno di un bar.
 ![6_esterni10](ImgRepo/6/6_esterni10.png)
 
 ### 6.4 Cartello esterno
+Vista con suddivisioni | Vista renderizzata
+:-------------------------:|:-------------------------:
+![6_esterni11](ImgRepo/6/6_esterni11.png) | ![6_esterni12](ImgRepo/6/6_esterni12.png)
