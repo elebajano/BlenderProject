@@ -137,3 +137,22 @@ Dopo aver duplicato il tavolo e la sedia originale, le copie sono state spostate
 Vista con suddivisioni | Vista renderizzata
 :-------------------------:|:-------------------------:
 ![6_esterni11](ImgRepo/6/6_esterni11.png) | ![6_esterni12](ImgRepo/6/6_esterni12.png)
+
+### 7. UV unwrapping
+Il processo dell'UV unwrapping é stato piuttosto lungo, non tanto per la difficoltá quanto per il numero di elementi da manipolare. Sono state curate 15 mappe in totale: 
+- Piano terra
+- Primo piano
+- I tre tetti
+- la decorazione del tetto
+- Il camino
+- I due lampioni
+- Il braccio del primo lampione
+- Separatore tra piano terra e primo piano
+- Marciapiede
+- Il cartello
+- Sedie
+- Tavoli
+
+Ogni mappa é stata creata sfruttando i *Seam* e il *Smart Uv Project*, entrambi sotto il menu invocato dal comando *U*.
+
+Per prima cosa é stata selezionata la mesh di cui fare l'unwrap
