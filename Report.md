@@ -130,10 +130,16 @@ Vista con suddivisioni | Vista renderizzata
 ![6_esterni6](ImgRepo/6/6_esterni6.png) | ![6_esterni7](ImgRepo/6/6_esterni7.png)
 ![6_esterni8](ImgRepo/6/6_esterni8.png) | ![6_esterni9](ImgRepo/6/6_esterni9.png)
 
-Dopo aver duplicato il tavolo e la sedia originale, le copie sono state spostate e ruotate di qualche grado, in modo da creare una composizione che possa somigliare a come si presenterebbe l'esterno di un bar.
+Dopo aver duplicato (*ctrl+D*) il tavolo e la sedia originale, le copie sono state spostate e ruotate di qualche grado, in modo da creare una composizione che possa somigliare a come si presenterebbe l'esterno di un bar.
 ![6_esterni10](ImgRepo/6/6_esterni10.png)
 
 ### 6.4 Cartello esterno
+Modellato come in precedenza a partire da un cubo, prima di tutto sono state ridotte le dimensioni tramite *Grab* sulle faccie, poi con il *LoopCut* la mesh é stata tagliata a metá. Temporaneamente separate dal comando *P*, le due metá sono state modellate separatamente, subito dopo aver aggiunto le gambe con l'estrusione di una sezione ritagliata da *LoopCut*. 
+
+Il retro del cartello é stato lasciato pressoché invariato, l'unico cambiamento é stata l'aggiunta di un ulteriore *LoopCut* a pochi centimetri dal bordo superiore per poter ruotare (*R*) la parte inferiore della mesh e creare l'angolo che permette al cartello di stare in piedi.
+
+Le stesse operazioni sono state eseguite sulla parte anteriore, con l'aggiunta, in questo caso, di 4 ulteriori *LoopCut* per creare la superficie poi estrusa verso l'interno che rappresenta la parte in ardesia del cartello.
+
 Vista con suddivisioni | Vista renderizzata
 :-------------------------:|:-------------------------:
 ![6_esterni11](ImgRepo/6/6_esterni11.png) | ![6_esterni12](ImgRepo/6/6_esterni12.png)
@@ -159,7 +165,7 @@ Per prima cosa é stata selezionata la mesh di cui fare l'unwrap e tramite il co
 
 A questo punto, selezionando in Edit mode tutte le faccie con *A*, é stata creata la mappa tramite il comando *Smart Uv Project*. Nella maggior parte dei casi le proiezioni delle faccie sono state riposizionate, ruotate e talvolta scalate in modo da andare a ricoprire la maggiore superficie possibile. Per eseguire queste operazioni sono stati utilizzati i comandi *R* rotate, *S* scale, *G* grab e infine *constrain to image bound*, aggiunto ai preferiti *Q* per un accesso piú veloce.
 
-Nel caso di tavoli e sedie, oggetti identici essendo creati tramite duplicazione, é stata creata una singola mappa uv, poi trasferita tramite selezione in Object mode e strumento di link, con il comando *ctrl+L &rarr; Object Data*.
+Nel caso di tavoli e sedie, oggetti identici essendo stati creati tramite duplicazione, é stata curata una singola mappa uv, poi trasferita tramite selezione in Object mode e strumento di link, con il comando *ctrl+L &rarr; Object Data*.
 
 . | .
 :-------------------------:|:-------------------------:
