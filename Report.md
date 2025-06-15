@@ -155,4 +155,19 @@ Il processo dell'UV unwrapping é stato piuttosto lungo, non tanto per la diffic
 
 Ogni mappa é stata creata sfruttando i *Seam* e il *Smart Uv Project*, entrambi sotto il menu invocato dal comando *U*.
 
-Per prima cosa é stata selezionata la mesh di cui fare l'unwrap
+Per prima cosa é stata selezionata la mesh di cui fare l'unwrap e tramite il comando */* le altre sono state nascoste. É stato quindi aperto l'editor uv di fianco alla Viewport tramite il menu in alto a sinistra. Di seguito, dalla Viewport, con la selezione degli edge, sono stati posizionati i *Seam* dove sembrava opportuno "tagliare" la mesh. 
+
+A questo punto, selezionando in Edit mode tutte le faccie con *A*, é stata creata la mappa tramite il comando *Smart Uv Project*. Nella maggior parte dei casi le proiezioni delle faccie sono state riposizionate, ruotate e talvolta scalate in modo da andare a ricoprire la maggiore superficie possibile. Per eseguire queste operazioni sono stati utilizzati i comandi *R* rotate, *S* scale, *G* grab e infine *constrain to image bound*, aggiunto ai preferiti *Q* per un accesso piú veloce.
+
+Nel caso di tavoli e sedie, oggetti identici essendo creati tramite duplicazione, é stata creata una singola mappa uv, poi trasferita tramite selezione in Object mode e strumento di link, con il comando *ctrl+L &rarr; Object Data*.
+
+. | .
+:-------------------------:|:-------------------------:
+![7_uvMap1](ImgRepo/7/7_UVunwrap_floor0.png) | ![7_uvMap2](ImgRepo/7/7_UVunwrap_floor1.png)
+![7_uvMap3](ImgRepo/7/7_UVunwrap_roof1.png) | ![7_uvMap4](ImgRepo/7/7_UVunwrap_roof2.png)
+![7_uvMap5](ImgRepo/7/7_UVunwrap_roof3.png) | ![7_uvMap6](ImgRepo/7/7_UVunwrap_chimney.png)
+![7_uvMap7](ImgRepo/7/7_UVunwrap_roofDec.png) | ![7_uvMap8](ImgRepo/7/7_UVunwrap_separator.png)
+![7_uvMap9](ImgRepo/7/7_UVunwrap_light1.png) | ![7_uvMap10](ImgRepo/7/7_UVunwrap_light2.png)
+![7_uvMap11](ImgRepo/7/7_UVunwrap_lampHolder.png) | ![7_uvMap12](ImgRepo/7/7_UVunwrap_sidewalk.png)
+![7_uvMap13](ImgRepo/7/7_UVunwrap_chair.png) | ![7_uvMap14](ImgRepo/7/7_UVunwrap_table.png)
+![7_uvMap15](ImgRepo/7/7_UVunwrap_sign.png) |
