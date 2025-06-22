@@ -208,3 +208,4 @@ Per le texture che avrebbero invece richiesto delle immagini di base per risulta
 ![8_marciapiede](ImgRepo/8/8_marciapiede.png) | ![8_mattoni](ImgRepo/8/8_mattoni.png)
 ![8_metallo](ImgRepo/8/8_metallo.png) | ![8_pietre](ImgRepo/8/8_pietre.png)
 ![8_tetto](ImgRepo/8/8_tetto.png) |
+
