@@ -144,7 +144,7 @@ Edit mode | Object mode
 :-------------------------:|:-------------------------:
 ![6_esterni11](ImgRepo/6/6_esterni11.png) | ![6_esterni12](ImgRepo/6/6_esterni12.png)
 
-### 7. UV unwrapping
+## 7. UV unwrapping
 Il processo dell'UV unwrapping é stato piuttosto lungo, non tanto per la difficoltá quanto per il numero di elementi da manipolare. Sono state curate 15 mappe in totale: 
 - Piano terra
 - Primo piano
@@ -177,3 +177,34 @@ Nel caso di tavoli e sedie, oggetti identici essendo stati creati tramite duplic
 ![7_uvMap11](ImgRepo/7/7_UVunwrap_lampHolder.png) | ![7_uvMap12](ImgRepo/7/7_UVunwrap_sidewalk.png)
 ![7_uvMap13](ImgRepo/7/7_UVunwrap_chair.png) | ![7_uvMap14](ImgRepo/7/7_UVunwrap_table.png)
 ![7_uvMap15](ImgRepo/7/7_UVunwrap_sign.png) |
+
+## 8. Textures
+Terminato l'UV unwrapping l'ultima fase prima della renderizzazione é la creazione e l'applicazione delle texture. La finestra a sinistra é stata cambiata sulla visualizzazione dello *Shader editor*, mentre a destra, dalla visualizzazione *Solid* si é passati a quella *Material preview*. In basso a destra, invece, sono state modificate le impostazioni sotto la scheda *render* in modo che questo venga eseguito con l'impostazione *Cycles*.
+
+É quindi cominciata la creazione delle varie textures da applicare ai materiali: in totale ne sono state realizzate 12.
+
+**Nota**: poco dopo la realizzazione della prima texture, quella del muro, mi sono accorta di alcuni errori presenti sulla mesh:
+1. Overlapping di alcune facce, risultando in "macchie" nere
+2. Array modifier non applicato alle parti decorative del tetto e separatore prima di unire le mesh
+
+Per correggere questi errori ho dovuto duplicare il file 7_UVunwrap.blend e ripartire dallo step precedente, applicando i modifier in modo da avere l'array completo una volta unite le mesh e aggiustando le parti in overlapping. \
+Ho tenuto il vecchio file con gli errori, rinominandolo 0_building_abandoned.blend.
+
+Essendo la prima texture su cui ho lavorato, quella del muro ha richiesto piú ricerca per comprendere il funzionamento dello *Shader editor* di Blender. Sono stati particolarmente di aiuto i [tutorial di Blender per le texture](https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/index.html), qualche articolo trovato online come [questo di Medium](https://medium.com/@samuelsullins/make-this-easy-procedural-wood-material-in-blender-with-just-10-nodes-c94a3f8b54ad) usato in seguito per il legno, e una prima infarinatura tramite [video tutorial](https://www.youtube.com/watch?v=f74DotbFFGc&t=758s) di YouTube. \
+Le texture del legno, ardesia, vetro, sedie e tavoli hanno richiesto meno ricerca tecnica perché realizzate in modo simile. \
+I nodi piú utilizzati sono stati il *Bump node*, *Noise*, *Color ramp*, *Bevel*, *Mix* e *Mapping e Texture Coordinates*. 
+
+. | .
+:-------------------------:|:-------------------------:
+![8_muro](ImgRepo/8/8_muro.png) | ![8_legno](ImgRepo/8/8_legno.png)
+![8_ardesia](ImgRepo/8/8_ardesia.png) | ![8_tavoli](ImgRepo/8/8_tavoli.png)
+![8_sedie-legno](ImgRepo/8/8_sedie-legno.png) | ![8_sedie-pelle](ImgRepo/8/8_sedie-pelle.png)
+![8_vetro](ImgRepo/8/8_vetro.png) | 
+
+Per le texture che avrebbero invece richiesto delle immagini di base per risultare piú realistiche, ho optato per la ricerca online, trovando un buon add-on con delle ottime texture gratuite da poter inserire nel mio modello. 
+
+. | .
+:-------------------------:|:-------------------------:
+![8_marciapiede](ImgRepo/8/8_marciapiede.png) | ![8_mattoni](ImgRepo/8/8_mattoni.png)
+![8_metallo](ImgRepo/8/8_metallo.png) | ![8_pietre](ImgRepo/8/8_pietre.png)
+![8_tetto](ImgRepo/8/8_tetto.png) |
