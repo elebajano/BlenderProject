@@ -209,3 +209,13 @@ Per le texture che avrebbero invece richiesto delle immagini di base per risulta
 ![8_metallo](ImgRepo/8/8_metallo.png) | ![8_pietre](ImgRepo/8/8_pietre.png)
 ![8_tetto](ImgRepo/8/8_tetto.png) |
 
+
+## 9. Preparazione al rendering
+Prima di poter avviare la renderizzazione la scena deve essere preparata; é stata aggiunta la fotocamera, *shift + A*, e posizionata nella vista attuale tramite *ctrl + alt + numpad 0*. Sono state quindi modificate le impostazioni di render, in basso a destra sotto la scheda "Render". Com engine é stato scelto Cycles, i sample massimi sono stati portati a 512, che dovrebbe dare un'immagine di risoluzione media, per non caricare troppo il pc, e il colore del mondo é stato modificato a bianco, questo sotto la scheda "World Properties" poco sotto.
+
+![9_render](ImgRepo/9/9_render.png)
+
+## 10. Render
+Con la scena pronta ho potuto avviare il rendering dell'immagine con *F12*.
+
+![10_building_rendered](ImgRepo/10/building.jpg)
